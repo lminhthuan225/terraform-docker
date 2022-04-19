@@ -10,7 +10,7 @@ terraform {
 provider "docker" {}
 
 resource "docker_image" "jenkins_ssh_agent" {
-  name         = "jenkins/ssh-agent:alpine"
+  name         = "jenkins/ssh-agent"
   keep_locally = false
 }
 
