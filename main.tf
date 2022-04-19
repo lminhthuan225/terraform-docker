@@ -15,7 +15,7 @@ resource "docker_image" "jenkins_ssh_agent" {
 }
 
 data "local_file" "read_ssh_pub_key" {
-  filename = "/var/lib/jenkins/.ssh/jenkins-gerrit.pub"
+  filename = "/var/lib/jenkins/.ssh/jenkins_agent_key.pub"
 }
 
 resource "docker_container" "jenkins_agent" {
